@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="script/form.js"></script>
+    
+    <title>LABair Payment</title>
+</head>
+<body>
+    <header class="clearfix"> <!--HEADER-->
+        <section class="firstBanner clearfix"> <!--FIRSTBANNER-->
+            <div class="wrapper">
+                <div class="firstIcons">
+                    <ul class="icons clearfix">
+                        <li>a</li><!--icona jordan-->
+                        <li>b</li><!--icona converse-->
+                    </ul>
+                </div>
+                <div class="firstMenu">
+                    <ul class="clearfix">
+                        <li>Trova un negozio</li>
+                        <li>Aiuto</li>
+                        <li>Unisciti a noi</li>
+                        <li>Accedi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <nav class="secondBanner"> <!--SECONDBANNER-->
+            <div class="clearfix wrapper">
+                <div class="logo">
+                    <ul class="icons">
+                        <li><a href="home.html">c</a></li><!--icona nike-->
+                    </ul>
+                </div>
+                <div id="secondMenu">
+                    <ul>
+                        <li>Novità e in evidenza</li>
+                        <li>Uomo</li>
+                        <li>Donna</li>
+                        <li>Bambini</li>
+                        <li>Outlet</li>
+                    </ul>
+                </div>
+                <div id="search-icon" class="clearfix">
+                    <div>
+                        <span class="icons">d</span> <!--icona search-->
+                        <input type="text" placeholder="Cerca">
+                    </div>
+                
+                    <div>
+                        <ul class="icons clearfix">
+                            <li><span>e</span></li> <!--icona cuore-->
+                            <li><span>f</span></li> <!--icona carrello-->
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </nav>
+        <div class="thirdBanner"> <!--THIRDBANNER-->
+            <div>
+                <div>
+                <h4>Fino al 50% di sconto</h4>
+                <p>Sono iniziati gli sconti di fine stagione</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <br>
+
+    <h1>Pagamento</h1>
+
+    <div class="wrapper clearfix"> <!--WRAPPER-->
+        <div id="shipping" class="close clearfix"> 
+            <div class="title"><p>Opzioni di consegna</p></div>
+
+            <div id="container"> <!--OPZIONI DI CONSEGNA-->
+
+                <div id="buttons"> <!--BOTTONI-->
+                    <div>
+                        <button>Spedizione</button>
+                    </div>
+                    <div>
+                        <button>Ritiro</button>
+                    </div>
+                </div>
+
+                <form action="#" class="shipment"> <!--PRIMO FORM-->
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Nome*">
+                        <span class="error"></span>
+                    </div>
+
+                    <div>
+                        <input type="text" id="surname" name="surname" placeholder="Cognome*">
+                        <span class="error"></span>
+                    </div>
+
+                    <div>
+                        <input type="text" id="address" name="address" placeholder="Inizia a digitare l'indirizzo">
+                        <span class="error"></span>
+                        <p>d</p>
+                    </div>
+
+                    <div>
+                        <input type="text" id="email" name="email" placeholder="Email*">
+                        <span class="error"></span>
+                    </div>
+
+                    <div>
+                        <input type="text" id="number" name="number" placeholder="Numero di telefono*">
+                        <span class="error"></span>
+                    </div>
+
+                    <div>
+                        <button>Salva e continua</button>
+                    </div>
+                </form>
+            </div>
+
+            
+            
+            <div id="payment" class="close clearfix"> <!--PAGAMENTO-->
+                <div class="title"><p>Pagamento</p></div>  
+                
+                <form action="#"> <!--SECONDO FORM-->
+                    <p>Paese/regione di fatturazione <span>o</span></p>
+                    <p>Italia <a href="#">Modifica</a></p>
+                    
+                    <div>
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Possiedi una giftcard, un voucher prodotto o un codice promozionale? <span>o</span></label>
+                    </div>
+                    
+                    <div> <!--SELEZIONE METODO-->
+                        <p>Seleziona metodo di pagamento</p> 
+                        <div>
+                            <input type="radio" id="debitCard" value="debitCard" name="pagamento" checked>
+                            <label for="debitCard"><span>p</span> Carta di credito o debito</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="paypal" value="paypal" name="pagamento">
+                            <label for="paypal"><img src="styles/logos/paypal.png" alt=""></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="googlePay" value="googlePay" name="pagamento">
+                            <label for="googlePay"><img src="styles/logos/googlePay.png" alt=""></label>
+                        </div>
+                    </div>
+                    
+                    <div id="addCard" class="clearfix"> <!--DATI CARTA-->
+                        <p>Aggiungi carta</p>
+                        
+                        <div>
+                            <input type="text" placeholder="Numero Carta" id="cardNumber">
+                            <span class="error"></span>
+                        </div>
+                        
+                        <div>
+                            <input type="text" placeholder="MM/AA" id="cardExpire">
+                            <span class="error"></span>
+                        </div>
+                        
+                        <div>
+                            <input type="text" placeholder="CVV" id="cvv">
+                            <span class="error"></span>
+                        </div>
+                        
+                        <div>
+                            <a href="#">Where is my CVV?</a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button>Passa alla verifica dell'ordine</button> <!--INVIO DATI-->
+                    </div>
+                </form>
+            </div>
+            
+            <div id="finalMessage" class="close"> <!--MESSAGGIO POST PAGAMENTO-->
+                <div>
+                    <p>Ordine effettuato con successo!</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="aside" class="clearfix"> <!--ASIDE CARRELLO-->
+            <aside>
+                <div class="clearfix">
+                    <div>
+                        <p>Nel carrello</p>
+                    </div>
+                    <div>
+                        <a href="#">Modifica</a>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <p>Subtotale <span>o</span></p>
+                    </div>
+                    <div>
+                        <p>370,00 &euro;</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <p>Costi di spedizione stimati</p>
+                    </div>
+                    <div>
+                        <p>0,00 &euro;</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <p>Totale</p>
+                    </div>
+                    <div>
+                        <p>370,00 &euro;</p>
+                    </div>
+                </div>
+                
+                
+                <div id="subItems" class="clearfix"> <!--ITEMS CARRELLO-->
+                    <div>
+                        <p>Arriva entro il giorno 29 gen</p>
+                    </div>
+                    
+                    <div>
+                        <img src="styles/images/HomeImages/scarpa_7.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <p>Scarpa Nike Dunk Low - Donna</p>
+                        <p>Modello nr. DZ2628-002</p>
+                        <p>Misura: 43</p>
+                        <p>Colore: Bianco/nero</p>
+                        <p>Quantità: 1 @ 170,00 &euro;</p>
+                        <p>170,00 &euro;</p>
+                    </div>
+                    
+                    <div>
+                        <img src="styles/images/HomeImages/scarpa_3.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <p>Scarpa Nike Dunk Low - Donna</p>
+                        <p>Modello nr. DZ2628-003</p>
+                        <p>Misura: 42</p>
+                        <p>Colore: Bianco/Grigio</p>
+                        <p>Quantità: 1 @ 200,00 &euro;</p>
+                        <p>200,00 &euro;</p>
+                    </div>
+                </div>
+            </aside>
+        </div>        
+    </div>
+</body>
+</html>

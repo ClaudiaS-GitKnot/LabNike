@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-size: 1em;
+    font-family: 'Hind', sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}
+
+@font-face {
+    font-family: 'first-icons';
+    src: url('../font/first-icons.eot?90289776');
+    src: url('../font/first-icons.eot?90289776#iefix') format('embedded-opentype'),
+         url('../font/first-icons.woff2?90289776') format('woff2'),
+         url('../font/first-icons.woff?90289776') format('woff'),
+         url('../font/first-icons.ttf?90289776') format('truetype'),
+         url('../font/first-icons.svg?90289776#first-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.icons{
+    font-family: "first-icons";
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*#region FIRSTBANNER*/
+.firstBanner{
+    background-color: #f5f5f5;
+}
+
+.firstIcons{
+    font-size: 1.5rem;
+    float: left;
+    width: 50%;
+}
+
+.firstIcons ul li{
+    float: left;
+    margin: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.firstMenu{
+    float: left;
+    width: 50%;
+    font-weight: bold;
+}
+
+.firstMenu ul{
+    float: right;
+    text-align: right;
+}
+
+.firstMenu ul li{
+    float: left;
+    font-size: 0.8rem;
+    line-height: 42px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/*#endregion FIRSTBANNER*/
+
+
+
+/*#region SECONDBANNER*/
+.secondBanner{
+    line-height: 65px;
+}
+
+.logo{
+    float: left;
+    width: 25%;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    /* cursor: pointer; */
+}
+
+.logo ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#secondMenu{
+    float: left;
+    width: 50%;
+    font-weight: bold;
+}
+
+#secondMenu ul{
+    text-align: center;
+}
+
+#secondMenu ul li{
+    display: inline-block;
+    height: 100%;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+#secondMenu ul li:first-child{
+    margin-left: 0;
+}
+
+/*#region SEARCH*/
+#search-icon{
+    float: right;
+    width: 25%;
+    padding-left: 50px;
+}
+
+#search-icon div:first-child{ /* inizio stile della barra search */
+    position: relative;
+    float: left;
+    width: 60%;
+}
+
+
+#search-icon > div > span{
+    position: absolute;
+    display: inline-block;
+    width: 39px;
+    line-height: 39px;
+    text-align: center;
+    top: 13px;
+    left: 0px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+
+#search-icon > div > span:hover{
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+
+#search-icon > div input{
+    width: 100%;
+    height: 40px;
+    padding: 8px 8px 8px 48px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50px;
+}
+
+#search-icon > div input:hover{ /* fine stile della barra search */
+    background-color: #d6d6d6;
+}
+
+#search-icon > div ~ div{
+    float: right;
+    width: 40%;
+    padding: 0 10px;
+}
+
+#search-icon > div ~ div li{
+    float: left;
+}
+
+#search-icon > div ~ div li span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+#search-icon > div ~ div li:last-of-type span{
+    font-size: 2rem;
+}
+
+#search-icon > div ~ div li a{
+    text-decoration: none;
+}
+/*#endregion SEARCH*/
+
+/*#endregion SECONDBANNER*/
+
+
+
+/*#region THIRDBANNER*/
+.thirdBanner{
+    float: left;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+header div:last-child h4, header div:last-child p{
+    text-align: center;
+    margin: 0;
+}
+
+header div:last-child p{
+    font-size: 0.7rem;
+}
+/*#endregion THIRDBANNER*/
+
+
+
+/*#region FOOTER*/
+.footer{
+    background-color: black;
+    height: 200px;
+}
+
+.footer h1{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+/*#endregion FOOTER*/

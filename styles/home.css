@@ -1,0 +1,146 @@
+/*#region HEROBANNER*/
+#heroBanner{
+    position: relative;
+}
+
+#heroBanner img{
+    width: 100%;
+    display: block;
+}
+
+#heroBanner div{
+    position: absolute;
+    bottom: 8%;
+    left: 2%;
+}
+
+#heroBanner div h2{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+}
+
+#heroBanner div p{
+    margin: 0 0 10px;
+    color: white;
+}
+
+#heroBanner div button{
+    width: 100px;
+    height: 33px;
+    border-radius: 50px;
+    border: none;
+}
+/*#endregion HEROBANNER*/
+
+/*#region ARROWS BUTTON*/
+.arrows{
+    padding: 0 10px;
+    margin: 70px 0 30px;
+}
+
+.arrows h4{
+    margin: 0;
+    line-height: 74px;
+    font-size: 2rem;
+    font-weight: normal;
+    float: left;
+}
+
+.arrows div button{
+    margin: 7px 5px;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #625e5ead;
+    border: none;
+    border-radius: 50%;
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+/*#endregion ARROWSBUTTON*/
+
+/*#region ITEMS*/
+#items div{  
+    float: left;
+    width: 33.333%;
+    padding: 0 10px;
+}
+
+#items img{
+    width: 100%;
+}
+
+#items h5{
+    margin: 0;
+}
+
+#items p{
+    margin: 0;
+    color: #00000058;
+}
+
+#items > div > a{
+    text-decoration: none;
+    color: black;
+}
+/*#endregion ITEMS*/
+
+/*#region SPORTS*/
+#sports div{
+    float: left;
+    width: 33.333%;
+    padding: 0 10px;
+}
+
+#sports img{
+    width: 100%;
+}
+
+#sports p{
+    font-weight: bold;
+}
+/*#endregion SPORTS*/
+
+/*#region MEMBERSHIP*/
+#membership div{  
+    float: left;
+    width: 33.333%;
+    padding: 0 10px;
+    position: relative;
+}
+
+#membership img{
+    width: 100%;
+    display: block;
+}
+
+#membership div div:last-child{
+    width: 70%;
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+}
+
+#membership div div:last-child p:first-of-type{
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#membership div div:last-child p:last-of-type{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#membership div > div button{
+    min-width: 100px;
+    height: 33px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.8rem;
+}
+/*#endregion MEMBERSHIP*/
